@@ -17,3 +17,14 @@ we managed to identify these errors and correct them.
 
 We think that time was also a factor that worked against us during this delivery, since having other projects plus the exams made it difficult
 to find a suitable time to meet to discuss and work on the creation of the page; however, we are a good team, so we eventually found a way to get the work done, and we intend to continue doing so until the final delivery.
+
+
+
+*Personal log* - Mariem
+
+This is not the first time I've worked with Hannah, and we've always been a great team. We both have ideas that complement each other, and the results are usually satisfactory for both parties. Although on this occasion, due to scheduling issues, it was a little more complicated to coincide to do the work, since in our opinion it was easier to collaborate in person than online, we managed to finish the first part of the project on time.
+
+As for the division of labor, I usually contribute mostly by structuring our ideas and giving a clearer vision of what we want to achieve, as well as researching extra elements that we may need, whether it be information or guides on how to develop a particular function. Hannah usually takes care of more programming, she's more organized in that regard, I've learned a lot by helping her program.
+
+And between the two of us we usually give it the stylization and design that we want, we both like to draw and design a lot, so we tend to be somewhat ambitious in that aspect.
+
