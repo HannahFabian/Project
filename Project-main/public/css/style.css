@@ -1,5 +1,3 @@
-/*para, aqui esta la version que ya tenías*/
-
 /* Centering h1 headers */
 h1 {
     text-align: center;
@@ -178,5 +176,46 @@ td {
         max-width: 300px; /* Prevent the box from growing too large */
     }
 }
+
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    background-color: #ea6f6f;
+}
+
+#containerElCubo {
+    padding: 20px;
+    background-color: #df9696;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 8px;
+    margin-left: 330px;
+    margin-right: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    height: 300px;
+}
+
+#elTexto {
+    align-items: center;
+    text-align: justify;
+}
+
+#goal {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top: -290px;
+    margin-left: 30px;
+}
+
+#info {
+    width: 1000px;
+    height: 460px;
+    margin-left: 200px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 
