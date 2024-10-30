@@ -37,5 +37,5 @@ app.get('/other', (req, res) => {
 
 
 app.listen(2000, () => {
-    console.log("Listening on port 2000"); // Para saber que nuestro server no va a crashear.
+    console.log("Listening on port 2000"); 
 });
