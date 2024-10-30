@@ -1,4 +1,4 @@
-Development log
+Development log #1
 
 The process of creating our project involved going through several complications, from proposing an initial idea of ​​how the page interface should look 
 and the main purpose of it, to directly how to build it so it would achieve our goals and expectations.
