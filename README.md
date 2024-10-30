@@ -12,6 +12,7 @@ I have quite a lot of ambition and expectations for our final delivery.
 
 
 *Personal log* - Hannah
+I think the biggest enemy is management of time, even if we strated working quite early, getting to comprehend the concepts seen in class and then trying to achieve them in the porject can get quite tricky sometimes. We didn't consider the kind of errors we had and how much it could set us back from our main goal. Regardless of the difficulties, I think we did a good job for this second delivery.
 
 
 
