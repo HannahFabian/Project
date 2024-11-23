@@ -2,7 +2,7 @@
 h1 {
     text-align: center;
     margin: 0;
-}
+} 
 
 /* Centering h2 headers */
 h2 {
@@ -14,10 +14,10 @@ h2 {
     width: 80%; /* Puedes ajustar el ancho */
     padding: 20px;
     margin: 0 auto; /* Centra el contenedor en la página */
-    border: 1px solid #b8a7ca;
+    border: 1px solid #fe9e9e;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #b8a7ca;
+    background-color: #c14747;
     text-align: center;
 }
 
@@ -30,7 +30,7 @@ h2 {
 .card-content {
     margin-top: 3%;
     padding: 15px;
-    background-color: rgba(144, 114, 176, 0.6); /* 80% de opacidad */
+    background-color: #ffa0a0; /* 80% de opacidad */
     border-radius: 6px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
@@ -42,7 +42,7 @@ h2 {
 .CareerTitle {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: underline;
-    background-color: #b8a7ca;
+    background-color: #df9696;
     font-size: 20px;
     text-align: center;
     margin: 0;
@@ -99,7 +99,7 @@ td {
 }
 
 .accordion-button {
-    background-color: #b8a7ca !important;
+    background-color: #df9696 !important;
     border: none;
     width: 100%;
     text-align: left;
@@ -180,7 +180,7 @@ td {
     width: 300px; /* Fixed width */
     height: auto; /* Height adjusts based on content */
     border-radius: 15px; /* Rounded corners */
-    background-color: #b8a7ca;
+    background-color: #df9696;
     color: white;
     display: flex;
     flex-direction: column; /* Stack content vertically */
@@ -262,4 +262,52 @@ td {
     height: 460px;
     margin-left: 200px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: auto;
+    overflow: hidden; /* Oculta los elementos fuera del área visible */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.box {
+    min-width: 100%; /* Cada tarjeta ocupará todo el ancho del carrusel */
+    flex-shrink: 0;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #FF6347; /* Color más claro al pasar el cursor */
 }
