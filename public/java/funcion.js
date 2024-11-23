@@ -20,3 +20,26 @@ document.querySelectorAll('.accordion-button').forEach(button => {
         }
     });
 });
+
+// Carrusel
+const carouselContainer = document.querySelector('.carousel-container');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const boxes = document.querySelectorAll('.box');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    const offset = -currentIndex * 100; // Calcula el desplazamiento en porcentaje
+    carouselContainer.style.transform = `translateX(${offset}%)`;
+}
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : boxes.length - 1;
+    updateCarousel();
+});
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < boxes.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+});
