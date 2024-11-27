@@ -9,6 +9,9 @@ h2 {
     text-align: center;
     margin: 0;
 }
+h3{
+    background-color: #c14747;
+}
 
 .card-container {
     width: 80%; /* Puedes ajustar el ancho */
