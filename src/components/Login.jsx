@@ -33,7 +33,7 @@ function Login({ users, setCurrentUser }) {
       const newUser = { username, password };
       users.push(newUser);
       alert("Registration successful! Please login.");
-      setIsRegistering(false); // Regresar al login después del registro
+      setIsRegistering(false); 
     }
   };
 
