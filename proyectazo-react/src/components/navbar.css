@@ -1,0 +1,78 @@
+/* Estilos generales del Navbar */
+.custom-navbar {
+    background-color: #460000 !important;  /* Fondo oscuro */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+}
+
+.navbar-brand {
+    color: white !important;  /* Color blanco para la marca */
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.navbar-toggler {
+    border-color: #7f2d2d;  /* Color del botón del menú en móviles */
+}
+
+/* Estilos generales para navegación */
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-toggle {
+    color: white !important;  /* Asegura que los enlaces sean blancos */
+    font-size: 1.1rem;
+    margin-right: 15px;  /* Espaciado entre los enlaces */
+    transition: color 0.3s ease;  /* Transición suave en el color al pasar el ratón */
+    
+}
+
+/* Hover para nav-link y dropdown-toggle */
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+    color: #ff6347 !important;  /* Cambiar color al pasar el ratón */
+    background: none;  /* Asegura que no haya fondo */
+}
+
+/* Estilos del dropdown */
+.navbar-nav .dropdown-menu {
+    background-color: #7a2624;  /* Fondo para el menú desplegable */
+    border-radius: 5px;  /* Bordes redondeados */
+}
+
+.navbar-nav .dropdown-item {
+    color: white;  /* Texto blanco */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #ab5252;  /* Fondo diferente al pasar el ratón */
+    color: white;
+}
+
+/* Estilo específico para el botón dropdown */
+.navbar-nav .dropdown-toggle {
+    background: none;  /* Sin fondo */
+    border: none;  /* Sin borde */
+    text-decoration: none;  /* Sin subrayado */
+    padding: 0;  /* Sin padding extra */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .custom-navbar {
+        border-radius: 0;  /* Sin bordes redondeados en dispositivos pequeños */
+        box-shadow: none;  /* Sin sombra */
+    }
+    
+    .navbar-nav .nav-link,
+    .navbar-nav .dropdown-toggle {
+        font-size: 1rem;  /* Ajustar tamaño de fuente en móviles */
+        margin-right: 10px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;  /* Ajustar tamaño de la marca en móviles */
+    }
+}
