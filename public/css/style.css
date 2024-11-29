@@ -9,231 +9,17 @@ h2 {
     text-align: center;
     margin: 0;
 }
-h3{
-    background-color: #c14747;
-}
 
-.card-container {
-    width: 80%; /* Puedes ajustar el ancho */
-    padding: 20px;
-    margin: 0 auto; /* Centra el contenedor en la página */
-    border: 1px solid #fe9e9e;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #c14747;
-    text-align: center;
-}
 
-.card-title {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.9rem;
-    color: #333;
-}
+/* Objetivo */
 
-.card-content {
-    margin-top: 3%;
-    padding: 15px;
-    background-color: #ffa0a0; /* 80% de opacidad */
-    border-radius: 6px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #ffffff;
-}
-
-/* CareerTitle class for section titles within .box */
-.CareerTitle {
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline;
-    background-color: #df9696;
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-}
-
-/* Rounded boxes styling */
-.rounded-box {
-    width: 800px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    gap: 15px;
-}
-
-/* Images inside rounded boxes */
-.rounded-box img {
-    width: 10%; /* Adjust as needed */
-    margin-bottom: 20px; /* Space between image and title */
-}
-
-/* Table styling */
-table {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-/* Centering table cell content */
-td {
-    text-align: center;
-}
-
-/* Scrolling system styling */
-#ScrollingSystem {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.accordion {
-    width: 80%; /* Ajusta al ancho deseado */
-    margin: 0 auto; /* Centra el contenedor del acordeón */
-    margin-top: 2%;
-}
-
-.accordion-item {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    overflow: hidden; /* Evita que el contenido se desborde */
-}
-
-.accordion-button {
-    background-color: #df9696 !important;
-    border: none;
-    width: 100%;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.accordion-button.active {
-    background-color: #583b68 !important; /* Color de fondo cuando está activo */
-    color:white !important;
-}
-
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out; /* Transición suave */
-    background-color: rgba(144, 114, 176, 0.5);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.accordion-inner {
-    display: flex; /* Usa flexbox para el diseño */
-    padding: 15px;
-}
-
-.accordion-image {
-    width: 100px; /* Ancho de la imagen */
-    height: auto; /* Mantiene la proporción */
-    margin-right: 5%; /* Espacio entre imagen y texto */
-}
-
-.accordion-info {
-    flex: 1; /* Permite que el texto ocupe el resto del espacio */
-}
-
-.accordion-links {
-    list-style-type: none; /* Elimina el estilo de lista */
-    padding: 0; /* Elimina el padding */
-    margin-top: 10px; /* Espacio superior para la lista */
-    color:#583b68;
-}
-
-.accordion-links li {
-    margin-bottom: 5px; /* Espacio entre enlaces */
-}
-
-.accordion-links a {
-    text-decoration: none; /* Sin subrayado */
-    color:#583b68 ; /* Color del enlace */
-    transition: color 0.3s; /* Transición suave para el color */
-}
-
-.accordion-links a:hover {
-    color: #ffffff; /* Color al pasar el ratón */
-}
-
-/* BodyUP container styling */
-#bodyUP {
-    margin: 0;
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 100vh; /* Ensure it takes up the full viewport height */
-}
-
-/* Container for boxes */
-.container {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping of boxes to new rows */
-    gap: 30px; /* Space between boxes */
-    justify-content: center; /* Center boxes horizontally */
-}
-/* Box styling */
-.box {
-    width: 300px; /* Fixed width */
-    height: auto; /* Height adjusts based on content */
-    border-radius: 15px; /* Rounded corners */
-    background-color: #df9696;
-    color: white;
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content vertically within the box */
-    align-items: center; /* Center content horizontally within the box */
-    font-size: 16px;
-    padding: 15px; /* Add padding to ensure content is not touching the edges */
-    box-sizing: border-box; /* Include padding in width */
-}
-
-/* Images inside boxes */
-.box img {
-    width: 250px; /* Adjust as needed */
-    height: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px; /* Space between image and title */
-}
-
-/* Media query for devices with a max width of 800px */
-@media (max-width: 800px) {
-    .box {
-        width: 90%; /* Adjust width to be a percentage of the container */
-    }
-
-    .box img {
-        width: 100%; /* Make the image responsive */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
-/* Media query for devices with a max width of 600px */
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center; /* Center boxes horizontally */
-    }
-
-    .box {
-        width: 100%; /* Make the box full width of the container */
-        max-width: 300px; /* Prevent the box from growing too large */
-    }
-}
-
-#title {
+.title {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0px;
     background-color: #ea6f6f;
 }
 
-#containerElCubo {
+.containerElCubo {
     padding: 20px;
     background-color: #df9696;
     border-radius: 20px;
@@ -247,7 +33,7 @@ td {
     height: 300px;
 }
 
-#elTexto {
+.elTexto {
     align-items: center;
     text-align: justify;
 }
@@ -268,47 +54,7 @@ td {
 }
 
 
-/* Carrusel */
-.carousel {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 80%; /* Ajusta el ancho del carrusel */
-    margin: auto;
-    overflow: hidden; /* Oculta los elementos fuera del área visible */
-}
 
-.carousel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-}
-
-.box {
-    min-width: 100%; /* Cada tarjeta ocupará todo el ancho del carrusel */
-    flex-shrink: 0;
-    text-align: center;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
 
 button.prev:hover,
 button.next:hover {
