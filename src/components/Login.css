@@ -1,23 +1,23 @@
 /* Login.css */
 .wrapper {
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: #f5f5f5; /* Fondo claro */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-color: #f5f5f5; 
     color: white;
   }
   
   .form-box {
     display: flex;
-    flex-direction: column; /* Elementos uno debajo del otro */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    background-color: #b76565; /* Fondo blanco */
+    background-color: #b76565; 
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 30%; /* Ancho relativo */
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%; 
     transition: transform 0.3s ease-in-out;
   }
   
@@ -33,7 +33,7 @@
   
   .title {
     margin-bottom: 10%;
-    color: #ffffff; /* Color del texto */
+    color: #ffffff;
     text-align: center;
   }
   
@@ -49,7 +49,7 @@
     padding: 10px;
     border: 1px solid #3d0303;
     background-color: #f8e0e0;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px; 
     font-size: 14px;
   }
   
@@ -62,7 +62,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
-    text-align: center; /* Alineación del texto en el centro */
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,7 @@
   
   
   button:hover {
-    background-color: #804545; /* Azul más oscuro al pasar el cursor */
+    background-color: #804545; 
   }
   
   .register-link {
@@ -91,7 +91,7 @@
   
   @media (max-width: 480px) {
     .form-box {
-      width: 90%; /* En pantallas pequeñas, el formulario ocupa el 90% del ancho */
+      width: 90%; 
     }
   }
   
