@@ -3,7 +3,7 @@ import './careers.css';
 
 function Medicine({ addToCart, userLoggedIn }) {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [errorMessage, setErrorMessage] = useState(""); // To store error message
+  const [errorMessage, setErrorMessage] = useState(""); 
 
   const handleAccordionClick = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -11,11 +11,11 @@ function Medicine({ addToCart, userLoggedIn }) {
 
   const handleAddToCart = (item) => {
     if (!userLoggedIn) {
-      setErrorMessage("You must be logged in to add items to the cart.");  // Show error message
-      return;  // Don't proceed with adding to cart
+      setErrorMessage("You must be logged in to add items to the cart.");  
+      return; 
     }
-    addToCart(item);  // Call addToCart if user is logged in
-    setErrorMessage(""); // Clear any previous error message
+    addToCart(item); 
+    setErrorMessage(""); 
   };
 
   return (
@@ -35,7 +35,7 @@ function Medicine({ addToCart, userLoggedIn }) {
         <div className="accordion-item">
           <button
             className={`accordion-button ${activeIndex === 0 ? 'active' : ''}`}
-            onClick={() => handleAccordionClick(0)} // Índice único para este acordeón
+            onClick={() => handleAccordionClick(0)} 
           >
              Pyschology
           </button>
@@ -60,7 +60,7 @@ function Medicine({ addToCart, userLoggedIn }) {
         <div className="accordion-item">
           <button
             className={`accordion-button ${activeIndex === 1 ? 'active' : ''}`}
-            onClick={() => handleAccordionClick(1)} // Índice único para este acordeón
+            onClick={() => handleAccordionClick(1)}}
           >
              Medicine
           </button>
@@ -85,7 +85,7 @@ function Medicine({ addToCart, userLoggedIn }) {
         <div className="accordion-item">
           <button
             className={`accordion-button ${activeIndex === 2 ? 'active' : ''}`}
-            onClick={() => handleAccordionClick(2)} // Índice único para este acordeón
+            onClick={() => handleAccordionClick(2)} 
           >
            Nutrition
           </button>
@@ -109,7 +109,7 @@ function Medicine({ addToCart, userLoggedIn }) {
         <div className="accordion-item">
           <button
             className={`accordion-button ${activeIndex === 3 ? 'active' : ''}`}
-            onClick={() => handleAccordionClick(3)} // Índice único para este acordeón
+            onClick={() => handleAccordionClick(3)} 
           >
             Nursing
           </button>
@@ -134,7 +134,7 @@ function Medicine({ addToCart, userLoggedIn }) {
         <div className="accordion-item">
           <button
             className={`accordion-button ${activeIndex === 4 ? 'active' : ''}`}
-            onClick={() => handleAccordionClick(4)} // Índice único para este acordeón
+            onClick={() => handleAccordionClick(4)} 
           >
             Dental Surgeon
           </button>
