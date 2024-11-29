@@ -1,0 +1,107 @@
+.card-container {
+    width: 80%; /* Puedes ajustar el ancho */
+    padding: 20px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    border: 1px solid #fe9e9e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #c14747;
+    text-align: center;
+}
+
+.card-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.9rem;
+    color: #333;
+}
+
+.card-content {
+    margin-top: 3%;
+    padding: 15px;
+    background-color: #ffa0a0; /* 80% de opacidad */
+    border-radius: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+/* Scrolling system styling */
+#ScrollingSystem {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.accordion {
+    width: 80%; /* Ajusta al ancho deseado */
+    margin: 0 auto; /* Centra el contenedor del acordeón */
+    margin-top: 2%;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.accordion-button {
+    background-color: #df9696 !important;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-button.active {
+    background-color: #583b68 !important; /* Color de fondo cuando está activo */
+    color:white !important;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Transición suave */
+    background-color: rgba(144, 114, 176, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accordion-inner {
+    display: flex; /* Usa flexbox para el diseño */
+    padding: 15px;
+}
+
+.accordion-image {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 5%; /* Espacio entre imagen y texto */
+}
+
+.accordion-info {
+    flex: 1; /* Permite que el texto ocupe el resto del espacio */
+}
+
+.accordion-links {
+    list-style-type: none; /* Elimina el estilo de lista */
+    padding: 0; /* Elimina el padding */
+    margin-top: 10px; /* Espacio superior para la lista */
+    color:#583b68;
+}
+
+.accordion-links li {
+    margin-bottom: 5px; /* Espacio entre enlaces */
+}
+
+.accordion-links a {
+    text-decoration: none; /* Sin subrayado */
+    color:#583b68 ; /* Color del enlace */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.accordion-links a:hover {
+    color: #ffffff; /* Color al pasar el ratón */
+}

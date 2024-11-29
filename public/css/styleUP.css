@@ -1,0 +1,148 @@
+.op{
+    background-color: #c14747;
+}
+
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: auto;
+    overflow: hidden; /* Oculta los elementos fuera del área visible */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.box {
+    min-width: 100%; /* Cada tarjeta ocupará todo el ancho del carrusel */
+    flex-shrink: 0;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #FF6347; /* Color más claro al pasar el cursor */
+}
+
+/* BodyUP container styling */
+#bodyUP {
+    margin: 0;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Ensure it takes up the full viewport height */
+}
+
+/* Container for boxes */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of boxes to new rows */
+    gap: 30px; /* Space between boxes */
+    justify-content: center; /* Center boxes horizontally */
+}
+/* Box styling */
+.box {
+    width: 300px; /* Fixed width */
+    height: auto; /* Height adjusts based on content */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #df9696;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically within the box */
+    align-items: center; /* Center content horizontally within the box */
+    font-size: 16px;
+    padding: 15px; /* Add padding to ensure content is not touching the edges */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Images inside boxes */
+.box img {
+    width: 250px; /* Adjust as needed */
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Space between image and title */
+}
+
+/* Media query for devices with a max width of 800px */
+@media (max-width: 800px) {
+    .box {
+        width: 90%; /* Adjust width to be a percentage of the container */
+    }
+
+    .box img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Media query for devices with a max width of 600px */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes horizontally */
+    }
+
+    .box {
+        width: 100%; /* Make the box full width of the container */
+        max-width: 300px; /* Prevent the box from growing too large */
+    }
+}
+
+
+/* CareerTitle class for section titles within .box */
+.CareerTitle {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    background-color: #df9696;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Rounded boxes styling */
+.rounded-box {
+    width: 800px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 15px;
+}
+
+/* Images inside rounded boxes */
+.rounded-box img {
+    width: 10%; /* Adjust as needed */
+    margin-bottom: 20px; /* Space between image and title */
+}
+
