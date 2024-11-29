@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './careers.css';
 
-function Administrative({ addToCart, userLoggedIn }) {  // userLoggedIn is passed as a prop
+function Administrative({ addToCart, userLoggedIn }) {  
   const [activeIndex, setActiveIndex] = useState(null);
-  const [errorMessage, setErrorMessage] = useState(""); // To store error message
+  const [errorMessage, setErrorMessage] = useState(""); 
 
   const handleAccordionClick = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -11,11 +11,11 @@ function Administrative({ addToCart, userLoggedIn }) {  // userLoggedIn is passe
 
   const handleAddToCart = (item) => {
     if (!userLoggedIn) {
-      setErrorMessage("You must be logged in to add items to the cart.");  // Show error message
-      return;  // Don't proceed with adding to cart
+      setErrorMessage("You must be logged in to add items to the cart.");  
+      return; 
     }
-    addToCart(item);  // Call addToCart if user is logged in
-    setErrorMessage(""); // Clear any previous error message
+    addToCart(item);  
+    setErrorMessage(""); 
   };
 
   return (
@@ -28,7 +28,7 @@ function Administrative({ addToCart, userLoggedIn }) {  // userLoggedIn is passe
         </div>
       </div>
 
-      {/* Error message display */}
+     
       {errorMessage && <div className="error-message">{errorMessage}</div>}
 
       {/* Acordeones con botones para agregar al carrito */}
@@ -60,7 +60,7 @@ function Administrative({ addToCart, userLoggedIn }) {  // userLoggedIn is passe
         <div className="accordion-item">
           <button
             className={`accordion-button ${activeIndex === 2 ? 'active' : ''}`}
-            onClick={() => handleAccordionClick(2)} // Índice único para este acordeón
+            onClick={() => handleAccordionClick(2)} 
           >
             Finances
           </button>
@@ -85,7 +85,7 @@ function Administrative({ addToCart, userLoggedIn }) {  // userLoggedIn is passe
         <div className="accordion-item">
           <button
             className={`accordion-button ${activeIndex === 3 ? 'active' : ''}`}
-            onClick={() => handleAccordionClick(3)} // Índice único para este acordeón
+            onClick={() => handleAccordionClick(3)} 
           >
             International Business
           </button>
