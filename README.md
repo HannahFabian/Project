@@ -1,20 +1,70 @@
-Development log #2
+# Getting Started with Create React App
 
-Render: https://project-qkpo.onrender.com/
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This second delivery was similar to the first in terms of it being a bit complicated to organize ourselves in time to be able to move forward together in the work, since our activities got in the way. However, we had the advantage that part of what was requested in the delivery of this second partial in terms of the design and animations made with js we had already thought about and done for the first delivery.
+## Available Scripts
 
-For this installment, Hannah took care of the backend, while I did the research for the different elements we needed to complete our project. On the other hand, I took care of the frontend for some sections we still had pending, such as the main objective section of the work and some extra decorations.
+In the project directory, you can run:
 
-We had a few issues along the way, for example, when accommodating our previous files with the elements required by Express, sometimes the page could not access certain elements or we had to change the addresses; but in the end, we managed to get the page working as it should using the new functions.
+### `npm start`
 
-*Personal log* - Mariem
-Personally, I am pleased with what Hannah and I achieved for this delivery. Again, I think our biggest enemy was time and the hassle of getting organized to be able to work together. However, I think we were capable to manage well, we supported each other in what each had to do when it was necessary and in the end we managed to make the progress we wanted for the delivery.
-I have quite a lot of ambition and expectations for our final delivery.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-*Personal log* - Hannah
-I think the biggest enemy is management of time, even if we strated working quite early, getting to comprehend the concepts seen in class and then trying to achieve them in the porject can get quite tricky sometimes. We didn't consider the kind of errors we had and how much it could set us back from our main goal. Regardless of the difficulties, I think we did a good job for this second delivery.
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

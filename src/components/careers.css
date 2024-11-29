@@ -1,0 +1,196 @@
+.card-container-career {
+    width: 80%; /* Puedes ajustar el ancho */
+    padding: 20px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #6a2424;
+    text-align: center;
+    color: #fff1f1;
+}
+
+.card-title-career {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff1f1;
+    font-size: 1.9rem;
+}
+
+.card-content-career {
+    margin-top: 3%;
+    padding: 15px;
+    background-color: #8a4141; /* 80% de opacidad */
+    border-radius: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.accordion {
+    width: 80%; /* Keep width consistent */
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Ensure content fits correctly */
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: #621f1f !important;
+    color: white !important;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 18px 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Ensures the title doesn't get cut off */
+    box-sizing: border-box; /* Makes padding and border part of the element’s total width/height */
+    height: auto; /* Allow the height to adjust automatically based on content */
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word; /* Ensures long words break */
+    text-overflow: clip; /* Avoids truncation of text */
+}
+
+.accordion-item .accordion-button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.accordion-button.active {
+    background-color: #360303 !important;
+    color: white !important;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: rgba(94, 24, 24, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.accordion-content.open {
+    max-height: 500px; /* Adjust based on content */
+    transition: max-height 0.5s ease-in-out;
+}
+
+.accordion-inner {
+    display: flex;
+    padding: 15px;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Ensures the image and information are spaced out */
+    position: relative; /* Needed for absolute positioning of the button */
+}
+
+.accordion-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px; /* Adjust the right margin */
+    object-fit: cover; /* Ensures the image is cropped properly */
+}
+
+.accordion-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced out vertically */
+}
+
+/* Initially hide the Add to Cart button */
+.add-to-cart-btn {
+    display: none;  /* Hide the button by default */
+    position: absolute; /* Position the button absolutely */
+    right: 15px; /* Align the button to the right */
+    bottom: 15px; /* Position the button at the bottom of the accordion item */
+    padding: 10px 15px;
+    background-color: #621f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Show the Add to Cart button when accordion content is open */
+.accordion-content.open .add-to-cart-btn {
+    display: block;  /* Display the button when the content is open */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #360303;
+}
+
+.accordion-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #400606;
+}
+
+.accordion-links li {
+    margin-bottom: 5px;
+}
+
+.accordion-links a {
+    text-decoration: none;
+    color: #683b3b;
+    transition: color 0.3s;
+}
+
+.accordion-links a:hover {
+    color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .accordion {
+        width: 100%; /* The accordion takes the full width on smaller screens */
+    }
+
+    .accordion-inner {
+        flex-direction: column; /* Stack elements vertically inside the accordion */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .accordion-image {
+        width: 80px; /* Reduce the image size on smaller screens */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .accordion-info {
+        padding-left: 0;
+        text-align: center; /* Center the text on smaller screens */
+    }
+
+    .add-to-cart-btn {
+        align-self: center; /* Center the button on smaller screens */
+        position: static; /* Reset the position for small screens */
+    }
+}
+
+.error-message {
+  color: #ff0000;
+  background-color: #fff3f3;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
